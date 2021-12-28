@@ -88,8 +88,8 @@ class Get_image():
         rospy.spin()
 
     def return_obj(self, req):
-            obj_x = self.obj_coor_x
-            obj_y = self.obj_coor_y
+            obj_x = int(self.obj_coor_x)
+            obj_y = int(self.obj_coor_y)
             
             return (obj_x, obj_y)
       
