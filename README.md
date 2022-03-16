@@ -95,3 +95,4 @@ sudo cp Azure-Kinect-Sensor-SDK/scripts/99-k4a.rules /etc/udev/rules.d/
 ```powershell
 reboot
 ```
+---
