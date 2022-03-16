@@ -66,22 +66,28 @@ $ rostopic list
 
 8. 錯誤
 
-1.  
+1.
 
+```powershell
 <aside>
 💡 To extend the USBFS limit, I manually moddified the grub( **/etc/default/grub** ) chaning ( **GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"** ) to ==> ( **GRUB_CMDLINE_LINUX_DEFAULT="quiet splash usbcore.usbfs_memory_mb=1000"** ),
 
 </aside>
+```
 
+```powershell
 <aside>
 💡 Update the grup ( **sudo update-grub** ) and restart your PC ( **sudo reboot** ).
 
 </aside>
+```
 
+```powershell
 <aside>
 💡 check if buffer size has successfully changed ( **cat /sys/module/usbcore/parameters/usbfs_memory_mb** )
 
 </aside>
+```
 
 2.  
 
