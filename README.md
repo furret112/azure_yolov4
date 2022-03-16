@@ -69,7 +69,9 @@ $ rostopic list
 1.
 
 ```powershell
-💡 To extend the USBFS limit, I manually moddified the grub( **/etc/default/grub** ) chaning ( **GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"** ) to ==> ( **GRUB_CMDLINE_LINUX_DEFAULT="quiet splash usbcore.usbfs_memory_mb=1000"** ),
+💡 To extend the USBFS limit, I manually moddified the grub( **/etc/default/grub** ) chaning 
+( **GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"** ) to ==> 
+( **GRUB_CMDLINE_LINUX_DEFAULT="quiet splash usbcore.usbfs_memory_mb=1000"** ),
 ```
 
 ```powershell
