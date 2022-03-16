@@ -96,3 +96,7 @@ sudo cp Azure-Kinect-Sensor-SDK/scripts/99-k4a.rules /etc/udev/rules.d/
 reboot
 ```
 ---
+# 使用Azure Kinect DK辨識消波塊
+```powershell
+rosrun obj_detect get_image.py
+```
