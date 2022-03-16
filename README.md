@@ -38,14 +38,14 @@ $ git clone https://github.com/microsoft/Azure_Kinect_ROS_Driver.git
 
 ```cpp
   *// Last capture timestamp for synchronizing playback capture and imu thread*
-       **-**    std**::**atomic_int64_t last_capture_time_usec_;
-       **+**    std**::**atomic**<int64_t>** last_capture_time_usec_;
+       -    std::atomic_int64_t last_capture_time_usec_;
+       +    std::atomic**<int64_t>** last_capture_time_usec_;
  
   *// Last imu timestamp for synchronizing playback capture and imu thread*
-       **-**    std**::**atomic_uint64_t last_imu_time_usec_;
-       **-**    std**::**atomic_bool imu_stream_end_of_file_;
-       **+**    std**::**atomic**<uint64_t>** last_imu_time_usec_;
-       **+**    std**::**atomic**<bool>** imu_stream_end_of_file_;
+       -    std::atomic_uint64_t last_imu_time_usec_;
+       -    std::atomic_bool imu_stream_end_of_file_;
+       +    std::atomic**<uint64_t>** last_imu_time_usec_;
+       +    std::atomic**<bool>** imu_stream_end_of_file_;
 ```
 
 6.  編譯
