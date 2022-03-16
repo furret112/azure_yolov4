@@ -66,7 +66,7 @@ $ rostopic list
 
 8. 錯誤
 
-1.
+I.
 
 ```powershell
 💡 To extend the USBFS limit, I manually moddified the grub( **/etc/default/grub** ) chaning 
@@ -82,7 +82,7 @@ $ rostopic list
 💡 check if buffer size has successfully changed ( **cat /sys/module/usbcore/parameters/usbfs_memory_mb** )
 ```
 
-2.  
+II.  
 
 ```powershell
 git clone -b v1.2.0 https://github.com/microsoft/Azure-Kinect-Sensor-SDK.git
