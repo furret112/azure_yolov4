@@ -1,7 +1,5 @@
 # Microsoft Azure Kinect DK安裝
 
----
-
 website: [https://docs.microsoft.com/zh-tw/azure/kinect-dk/sensor-sdk-download](https://docs.microsoft.com/zh-tw/azure/kinect-dk/sensor-sdk-download)
 
 1.  設定Microsoft 的套件存放庫
